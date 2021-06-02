@@ -36,4 +36,13 @@ git commit --amend -> 커밋메세지 수정( a눌러 수정후 :wq!로 빠져�
 
 git reset --hard or --soft 로그해시 -> 해당 로그 커밋으로 되돌리기
 
+git reset 옵션
+(돌아가고 싶은 commit으로 reset할 때,
+--hard: reset하기 전까지 했던 staging area, working directory의 작업까지 모두 reset!
+(모든 게 잘못됐어! 나 돌아갈래~ 꽃피던 때부터 정갈하게 다시 해보자!)
+--mixed(default): staging area은 reset, reset하기 전까지 했던 working directory의 작업은 남겨둠.
+(현재 작업물은 지우긴 싫고, 이전 버전으로 돌아가서 add할지 말지 결정해야 할 때)
+--soft: reset하기 전까지 했던 staging area, working directory의 작업은 남겨둠.
+(reset한 버전과 현재까지의 작업을 합쳐 새로운 버전 만들 때)
+
 
