@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="testStyle.css">
+    <title>jsonToTree</title>
+</head>
+<body>
+    <ul id='frontEnd'>
+        <li><span class="caret">parent</span>
+            <ul class="nested">
+                <li>child</li>
+                <li><span class = "caret">child</span>
+                    <ul class="nested">
+                        <li>grand child</li>
+                        <li><span class="caret">grand child</span>
+                            <ul class="nested">
+                                <li>Great grand child</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+<button id="createParent">Create Parent</button>
+    <ul id="backEnd">
+    </ul>
+    <script src = "tree.js"></script>
+</body>
+</html>

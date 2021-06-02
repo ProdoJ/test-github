@@ -1,0 +1,57 @@
+#frontEnd ul{
+    list-style: none;
+}
+
+.caret{
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.caret::before{
+    content:'\25B6';
+}
+
+ul li ul{
+    border-left: 1px solid black;
+
+}
+
+ul ul li {
+    position: relative;
+
+}
+
+ul ul li::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -40px;
+    background: black;
+    width: 31px;
+    height: 1px;
+}
+
+.caret-down{
+    position: relative;
+}
+
+.caret-down::before{
+    content:'\25B9';
+    transform:rotate(90deg);
+}
+
+.nested{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.closeIT{
+    background: blue;
+    color: white;
+    padding: 0.3rem 0.3rem;
+    cursor: pointer;
+}
