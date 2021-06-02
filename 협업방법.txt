@@ -1,0 +1,39 @@
+1. fork 하여 내 repository에 만들기
+2. 내 repository에서 clone하기
+3. push pull 디폴트 경로가 어디인지 확인 //git remote show repository이름
+
+
+-----------------------------------
+
+4. 본래 프로젝트 repository 등록
+  - git remote add 명칭 URL
+  - git remote rename 내오리진 새로운이름  //본래 repository와 내 repository가 헷갈리지 않게 하기 위함
+
+// git remote 또는 git remote -v로 프로젝트 repository 확인 가능
+
+5. 브랜치 생성
+  - git checkout -b 만들브랜치이름
+  // 변경은 git checkout 바꿀브랜치이름
+  
+  
+6. 브랜치에서 작업 후
+   1) git status로 변경사항 확인
+   2) git add .로 업스테이지에 올리기
+   3) git commit -m "커밋메세지"
+   4) git push repository이름 브랜치이름
+
+
+
+7. pull request가 들어가면 추후 master 브랜치에서 pull 이후 오류 점검 후 push
+
+
+// 기타 git 명령어
+git rm 파일 -> 파일 삭제
+
+git log -> 로그 확인 (q로 빠져나오기)
+
+git commit --amend -> 커밋메세지 수정( a눌러 수정후 :wq!로 빠져나오기 )
+
+git reset --hard or --soft 로그해시 -> 해당 로그 커밋으로 되돌리기
+
+
