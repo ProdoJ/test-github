@@ -12,3 +12,5 @@ steps to create tree ui:
 10. Get the parent element of caret
 11. From Parent find the class nested inside the current parent
 12. Apply class active
+
+-- this is written in 2021 june 2 --
